@@ -1,0 +1,137 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--background-color-footer);
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-social {
+    margin-right: 93px;
+}
+
+.footer-social__text {
+    margin-bottom: 20px;
+    color: var(--color-white);
+    
+    @include font(14px, 700, 16px);            
+    letter-spacing: var(--letter-spacing-priority);
+    text-transform: uppercase;
+}
+
+.social-list__link_footer-bg-color {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.address-container {
+    display: inline-block;
+
+    width: 231px;
+    margin-right: 70px;
+}
+
+.address-list {
+    font-style: normal;
+    @include font(14px, false, 24px);    
+    letter-spacing: var(--letter-spacing-priority);
+
+    transition-property: color;
+    transition-duration: var(--standart-transition-time);
+    transition-timing-function: var(--standart-cubic-bezier);
+
+}
+
+.address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-list__link {
+    font-style: normal;
+    @include font(14px, false, 24px);        
+    letter-spacing: var(--letter-spacing-priority);
+    color: var(--font-color-footer);
+
+    transition-property: color;
+    transition-duration: var(--standart-transition-time);
+    transition-timing-function: var(--standart-cubic-bezier);
+    
+    &:hover,
+    &:focus {
+        color: var(--color-accent);
+    }
+    }
+
+.address-list__link_color {
+    color: var(--color-white);
+    
+    &:hover,
+    &:focus {
+        color: var(--color-accent);
+    }
+}    
+
+.subscribe-form {
+    width: 570px;
+}
+    
+.subscribe-form__desc {
+    display: block;
+    margin-bottom: 20px;
+    @include font(14px, 700, 16px);        
+    letter-spacing: var(--letter-spacing-priority);
+    text-transform: uppercase;
+
+    color: var(--color-white);
+}
+
+.subscribe-form__input {
+    width: 100%;
+    padding: 15px 16px;
+    margin-right: 12px;
+
+    @include font(16px, 400, 20px);        
+    letter-spacing: var(--letter-spacing-priority);
+    color: var(--color-white);
+
+    background-color: inherit;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    &::placeholder {
+        @include font(16px, 400, 20px);
+        letter-spacing: var(--letter-spacing-priority);
+    
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+.subscribe-fild {
+    display: flex;
+}
+
+.subscribe-form__btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 28px;
+
+    border: 0;
+    border-radius: 4px;
+    
+    &::after {
+        content: '';
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/send-icon.svg);
+    }
+}
+
+
+
+

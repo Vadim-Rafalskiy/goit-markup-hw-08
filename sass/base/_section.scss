@@ -1,0 +1,26 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.section_padding-top {
+    padding-top: 0;
+}
+
+.section_bg-color {
+    background-color: var(--background-color-secondary);
+}
+
+.section-title {
+    @include font(36px, false, 42px);
+    text-align: center;
+    letter-spacing: var(--letter-spacing-priority);
+
+    color: var(--font-color-secondary);
+
+}
+
+.section-title_margin-b {
+    margin-bottom: 50px;
+}

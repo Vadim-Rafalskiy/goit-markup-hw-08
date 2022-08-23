@@ -1,0 +1,20 @@
+.hero__btn {
+    transition-property: background-color;
+    transition-duration: var(--standart-transition-time);
+    transition-timing-function: var(--standart-cubic-bezier);
+
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    border-radius: 4px;
+    border: 0px;
+
+    font-family: inherit;
+    font-style: normal;
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-accent-hover);
+    }
+}

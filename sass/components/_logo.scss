@@ -1,0 +1,23 @@
+.logo {
+  font-family: var(--font-family-secodary);
+  @include font(26px, 700, 31px);
+  letter-spacing: var(--letter-spacing-priority);
+  color: var(--color-accent);
+}
+
+.logo__page-header {
+  margin-right: 93px;
+}
+
+.logo__footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo__header-color {
+  color: var(--color-logo);
+}
+
+.logo__footer-color {
+  color: var(--color-white);
+}
