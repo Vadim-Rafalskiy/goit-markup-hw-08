@@ -1,23 +1,34 @@
 .logo {
   font-family: var(--font-family-secodary);
-  @include font(26px, 700, 31px);
+
+  @include font(24px, 700, 28px);
   letter-spacing: var(--letter-spacing-priority);
   color: var(--color-accent);
+
+  @media screen and(min-width:1200px) {
+    @include font(26px, disable, 31px);
+  }
 }
 
 .logo__page-header {
-  margin-right: 93px;
+  @media screen and(min-width:768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 93px;
+  }
 }
 
-.logo__footer {
-  display: inline-block;
-  margin-bottom: 20px;
-}
+// .logo__footer {
+//   display: inline-block;
+//   margin-bottom: 20px;
+// }
 
 .logo__header-color {
   color: var(--color-logo);
 }
 
-.logo__footer-color {
-  color: var(--color-white);
-}
+// .logo__footer-color {
+//   color: var(--color-white);
+// }

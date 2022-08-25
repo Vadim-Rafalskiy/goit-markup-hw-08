@@ -1,17 +1,17 @@
-.doing-list {
+@media screen and(min-width:1200px) {
+  .doing-list {
     display: flex;
+  }
 
-}
-
-.doing-list__item {
+  .doing-list__item {
     position: relative;
-}
+  }
 
-.doing-list__item:not(:last-child) {
+  .doing-list__item:not(:last-child) {
     margin-right: 30px;
-}
+  }
 
-.doing-list__text {
+  .doing-list__text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,10 +22,11 @@
     left: 0;
     bottom: 0;
 
-    @include font(14px, false, 16px);        
+    @include font(14px, false, 16px);
     letter-spacing: var(--letter-spacing-priority);
     text-transform: uppercase;
 
     color: var(--color-white);
     background-color: rgba(47, 48, 58, 0.8);
+  }
 }

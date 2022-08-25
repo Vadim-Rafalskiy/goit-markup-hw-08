@@ -1,26 +1,40 @@
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-
+  }
 }
 
 .section_padding-top {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
     padding-top: 0;
+  }
 }
 
 .section_bg-color {
-    background-color: var(--background-color-secondary);
+  background-color: var(--background-color-secondary);
 }
 
 .section-title {
+  @include font(28px, 700, 33px);
+  text-align: center;
+  letter-spacing: var(--letter-spacing-priority);
+
+  color: var(--font-color-secondary);
+
+  @media screen and (min-width: 1200px) {
     @include font(36px, false, 42px);
-    text-align: center;
-    letter-spacing: var(--letter-spacing-priority);
-
-    color: var(--font-color-secondary);
-
+  }
 }
 
 .section-title_margin-b {
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+  }
 }

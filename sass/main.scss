@@ -1,25 +1,24 @@
-@import "./utils/variables";
-@import "./utils/visually-hidden";
-@import "./utils/mixins";
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
 
+@import './base/common';
+@import './base/section';
+@import './base/container';
 
-@import "./base/common";
-@import "./base/section";
-@import "./base/container";
+@import './components/hero__btn';
+@import './components/logo';
+@import './components/mobile-menu';
+@import './components/button';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
 
-@import "./components/hero__btn";
-@import "./components/logo";
-@import "./components/button";
-@import "./components/backdrop";
-@import "./components/modal-window";
-@import "./components/modal-form";
-
-@import "./layouts/header";
-@import "./layouts/hero";
-@import "./layouts/benefits";
-@import "./layouts/doing";
-@import "./layouts/team";
-@import "./layouts/client";
-@import "./layouts/footer";
-@import "./layouts/portfolio";
-
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/benefits';
+@import './layouts/doing';
+@import './layouts/team';
+@import './layouts/client';
+@import './layouts/footer';
+@import './layouts/portfolio';

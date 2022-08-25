@@ -1,8 +1,13 @@
 @mixin font($size: false, $weight: false, $lh: false) {
-    
-    @if $size {font-size: $size;}
-    
-    @if $weight {font-weight: $weight;}
+  @if $size {
+    font-size: $size;
+  }
 
-    @if $lh {line-height: calc($lh / $size);}
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $lh {
+    line-height: calc($lh / $size);
+  }
 }
