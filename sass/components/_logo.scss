@@ -6,7 +6,7 @@
   color: var(--color-accent);
 
   @media screen and(min-width:1200px) {
-    @include font(26px, disable, 31px);
+    @include font(26px, false, 31px);
   }
 }
 
@@ -20,15 +20,15 @@
   }
 }
 
-// .logo__footer {
-//   display: inline-block;
-//   margin-bottom: 20px;
-// }
+.logo__footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
 
 .logo__header-color {
   color: var(--color-logo);
 }
 
-// .logo__footer-color {
-//   color: var(--color-white);
-// }
+.logo__footer-color {
+  color: var(--color-white);
+}

@@ -4,6 +4,10 @@
     padding-top: 48px;
     padding-left: 40px;
     padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   .mobile-menu {
@@ -52,7 +56,6 @@
   .mobile-menu-nav {
     @include font(40px, 500, 47px);
     letter-spacing: 0.02em;
-    margin-bottom: 308px;
   }
 
   .mobile-menu-nav__item:not(:last-child) {
@@ -92,6 +95,7 @@
 
   .mobile-menu-social {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .mobile-menu-social__item:not(:last-child) {
