@@ -73,6 +73,10 @@
     }
   }
 
+  .mobile-menu-nav__link_current {
+    color: var(--color-accent);
+  }
+
   .mobile-menu-address {
     margin-bottom: 64px;
   }
