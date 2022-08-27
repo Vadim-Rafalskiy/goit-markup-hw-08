@@ -6,11 +6,12 @@
   }
 }
 
-.team-list__item {
+.team-list__item:not(:last-child) {
   @media screen and(max-width:767px) {
     margin-bottom: 30px;
   }
-
+}
+.team-list__item {
   @media screen and(min-width:768px) {
     flex-basis: calc((100% - 30px) / 2);
   }
